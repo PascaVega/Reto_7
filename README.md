@@ -384,26 +384,5 @@ if __name__ == "__main__":
 # ! /\|=\/
 ```
 
-<h2>Bibliografía</h2>
-    <div class="bibliografia">
-        <table>
-            <tr>
-                <th>Referencia</th>
-            </tr>
-            <tr>
-                <td>Car and Driver. (2024, febrero 26). Los 20 coches más rápidos del mundo y su velocidad máxima. Recuperado de https://www.caranddriver.com/es/coches/planeta-motor/g38887240/coches-mas-rapidos-mundo/<a href="https://www.caranddriver.com/es/coches/planeta-motor/g38887240/coches-mas-rapidos-mundo/"></a></td>
-            </tr>
-            <tr>
-                <td>Women's Health. (2024, febrero 19). ¿A qué ritmo deberíamos comenzar a correr para lograr después una gran velocidad? Recuperado de https://www.womenshealthmag.com/es/fitness/a2000480/velocidad-corren-humanos/<a href="https://www.womenshealthmag.com/es/fitness/a2000480/velocidad-corren-humanos/"></a></td>
-            </tr> 
-          <tr>
-                <td>Pythonspot. (2023, noviembre 26). Python Tests / Quizes. Recuperado de https://pythonspot.com/python-tests-quizes/<a href="https://pythonspot.com/python-tests-quizes/"></a></td>
-            </tr> 
-          <tr>
-                <td>Mundo Deportivo. (s.f.). Lista de países y capitales de América. Recuperado de https://www.mundodeportivo.com/uncomo/educacion/articulo/lista-de-paises-y-capitales-de-america-42870.html<a href="https://www.mundodeportivo.com/uncomo/educacion/articulo/lista-de-paises-y-capitales-de-america-42870.html"></a></td>
-          </tr>
-          <tr>
-                <td>Concepto. (2024, febrero 18). Espectro Electromagnético - Concepto, regiones, usos e importancia. Recuperado de https://concepto.de/espectro-electromagnetico/<a href="https://concepto.de/espectro-electromagnetico/"></a></td>
-          </tr>              
         </table>
     </div>
