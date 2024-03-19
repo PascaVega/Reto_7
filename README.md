@@ -108,6 +108,7 @@ if __name__ == "_main_":
 </table>
 
 ```mermaid
+flowchart TD
     A[Inicio] --> |Ingresar un numero mayor o igual a 2| B{n >= 2}
     B -- Si --> C{n % 2 == 0}
     C -- Si --> E(Imprimir n)
