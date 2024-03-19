@@ -6,7 +6,7 @@
 ## Solución del reto
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 1</b></th>
+    <th><b>Reto 7 - Parte 1</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
     <td style="color:#141414" align="center">Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.</td>
@@ -15,6 +15,17 @@
     <td style="color:#141414" align="center">En esta ocasión, se utilizó el ciclo while para generar un bucle que imprimiera los números del 1 al 100 con sus respectivos cuadrados.</td>
   </tr>
 </table>
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B(n = 1)
+    B --> C{n <= 100}
+    C -- Si --> D(m**2)
+    D --> E(Imprimir n , m)
+    E --> G(n += 1)
+    G --> C
+    C -- No --> F[Fin]
+```
 
 **Parte 1**
 ```python
@@ -36,7 +47,7 @@ if __name__ == "_main_":
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 2</b></th>
+    <th><b>Reto 7 - Parte 2</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
     <td style="color:#141414" align="center">Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.</td>
@@ -45,6 +56,21 @@ if __name__ == "_main_":
     <td style="color:#141414" align="center">Para este ejercicio, se utilizaron dos ciclos <i>while</i>, el primero para imprimir los números impares y el segundo para los números pares.</td>
   </tr>
 </table>
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B(n = 1)
+    B --> C(m = 2)
+    C --> D{n <= 999}
+    D -- Si --> E(Imprimir n)
+    E --> F(n += 1)
+    F --> D
+    D -- No --> G{m <= 1000}
+    G -- Si --> H(Imprimir m)
+    H --> I(m += 1)
+    I --> G
+    G -- No --> J[Fin]
+```
 
 **Parte 2**
 ```python
@@ -71,24 +97,25 @@ if __name__ == "_main_":
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 3</b></th>
+    <th><b>Reto 7 - Parte 3</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
     <td style="color:#141414" align="center">Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado</td>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">En esta ocasión, se hace uso de un ciclo while</td>
+    <td style="color:#141414" align="center">En esta ocasión, se hace uso de un ciclo <i>while</i> para determinar los números pares menor a cierto número.</td>
   </tr>
 </table>
 
 ```mermaid
-flowchart TD
-    A[Inicio] -->|Ingrese un número n| B(n/2)
-    B --> C{El residuo del cociente es cero}
-    C -- Si --> D(El número es par)
-    C -- No --> E(El número es impar)
-    D --> F[Fin]
-    E --> F
+    A[Inicio] --> |Ingresar un numero mayor o igual a 2| B{n >= 2}
+    B -- Si --> C{n % 2 == 0}
+    C -- Si --> E(Imprimir n)
+    E --> F(n -= 2)
+    F --> B
+    C -- No --> G(n -= 1)
+    G --> C
+    B -- No --> H[Fin]
 ```
 
 **Parte 3**
@@ -129,13 +156,13 @@ if __name__ == "_main_":
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 4</b></th>
+    <th><b>Reto 7 - Parte 4</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.</td>
+    <td style="color:#141414" align="center">En 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18.9 millones. Las tasas de crecimiento anual de la población serán de 2% y 3% respectivamente. Desarrollar un algoritmo para informar en que año la población del país B superará a la de A.</td>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Para este punto, se comprueba que el primer número no es 0, para después continuar con el uso del operador del número para calcular el residuo de la división del primer número por el segundo, puesto que si el residuo de <i>num1 / num2</i> no es cero, entonces <i>num1</i> no es múltiplo de <i>num2</i>.</td>
+    <td style="color:#141414" align="center">Para este punto, se plantea el ciclo <i>while</i> para ir aumentando las poblaciones (a sus debidas proporciones) para que al momento de que la población B sea mayor que la población A se imprima el año del suceso.</td>
   </tr>
 </table>
 
@@ -160,13 +187,13 @@ print(f"El año en el que la población del país B será mayor que la del país
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 5</b></th>
+    <th><b>Reto 7 - Parte 5</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.</td>
+    <td style="color:#141414" align="center">Imprimir el factorial de un número natural n dado.</td>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Para el quinto punto del taller, se emplean diferentes desigualdades en las que se tiene en que se tiene en cuenta el orden en que se ingresan los datos.</td>
+    <td style="color:#141414" align="center">Para el quinto punto del reto, se emplea el ciclo <i>while</i> para multiplicar el número por los anteriores.</td>
   </tr>
 </table>
 
@@ -211,13 +238,13 @@ if __name__ == "__main__":
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 6</b></th>
+    <th><b>Reto 7 - Parte 6</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.</td>
+    <td style="color:#141414" align="center">Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual.</td>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Para este ejercicio, se parte de la lista de vocales y luego se hace uso de condicionales para determinar si la letra está dentro de esa lista o no, en caso de no estarlo sería una consonante.</td>
+    <td style="color:#141414" align="center">Para este ejercicio, únicamente se utilizan condicionales para determinar si el número era mayor o menor e ir ayudando al usuario a adivinarlo.</td>
   </tr>
 </table>
 
@@ -270,21 +297,13 @@ if __name__ == "__main__":
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 7</b></th>
+    <th><b>Reto 7 - Parte 7</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
-  <td style="color:#141414" align="center">Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:
-        <li>El promedio</li>
-        <li>La mediana</li>
-        <li>El promedio multiplicativo </li>
-        <li>Ordenar los números de forma ascendente</li>
-        <li>Ordenar los números de forma descendente</li>
-        <li>La potencia del mayor número elevado al menor número</li>
-        <li>La raíz cúbica del menor número</li>
-   </td>
+  <td style="color:#141414" align="center">Implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.</td>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Para este punto, primero se ordenan los números de forma ascendente en una lista a partir de una función propia <i>ordenar_numeros</i>, y desde ahí se van ejecutando las operaciones correspondientes.</td>
+    <td style="color:#141414" align="center">Para este punto, se definió una función para introducir un número que estuviera en el intervalo [2,50] y luego se utilizaron condicionales acompañados del ciclo <i>while</i> para determinar los divisores del número.</td>
   </tr>
 </table>
 
@@ -335,13 +354,13 @@ if __name__ == "__main__":
 
 <table cellspacing="1" bgcolor="" align="center">
   <tr bgcolor="#252582">
-    <th><b>Taller 1 - Parte 8</b></th>
+    <th><b>Reto 7 - Parte 8</b></th>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.</td>
+    <td style="color:#141414" align="center">Implementar el algoritmo que muestre los números primos del 1 al 100. Nota: use funciones.</td>
   </tr>
   <tr bgcolor="#e4e4ed">
-    <td style="color:#141414" align="center">En esta ocasión, se investigó sobre el espectro electromagnético para después generar desigualdades que permitan determinar en qué parte del espectro electromagnético se encuentra la onda.</td>
+    <td style="color:#141414" align="center">En esta ocasión, se partió de una lista de los números primos existentes en el intervalo [1,100] y luego se utilizó el ciclo <i>while</i> para imprimir la lista.</td>
   </tr>
 </table>
 
