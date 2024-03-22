@@ -3,7 +3,7 @@
 
 n : int = 1
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Números del 1 al 100 con su respectivo cuadrado.")
 
     while n <= 100:
