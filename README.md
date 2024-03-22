@@ -34,7 +34,7 @@ flowchart TD
 
 n : int = 1
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Números del 1 al 100 con su respectivo cuadrado.")
 
     while n <= 100:
@@ -80,7 +80,7 @@ flowchart TD
 n : int = 1
 m : int = 2
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Números impares del 1 al 999")
     while n <= 999:
         print(str(n))
@@ -140,7 +140,7 @@ def continuar():
     opcion : int = int(input("¿Desea continuar? Marque 1 (sí) o 2 (no): "))
     return opcion
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Ingrese un número natural para obtener los números pares descendentes hasta 2")
 
     while True:
@@ -175,13 +175,12 @@ if __name__ == "_main_":
 a = 25000000
 b = 18900000
 año = 2022
-
-while b <= a:
-    a = a + (a * 0.02)
-    b = b + (b * 0.03)
-    año = año + 1
-
-print(f"El año en el que la población del país B será mayor que la del país A es: {año}")
+if __name__ == "__main__":
+    while b <= a:
+        a = a + (a * 0.02)
+        b = b + (b * 0.03)
+        año = año + 1
+    print(f"El año en el que la población del país B será mayor que la del país A es: {año}")
 
 # ! /\|=\/
 ```
