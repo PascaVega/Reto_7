@@ -4,7 +4,7 @@
 n : int = 1
 m : int = 2
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Números impares del 1 al 999")
     while n <= 999:
         print(str(n))
