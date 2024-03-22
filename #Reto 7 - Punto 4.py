@@ -5,11 +5,11 @@ a = 25000000
 b = 18900000
 año = 2022
 
-while b <= a:
-    a = a + (a * 0.02)
-    b = b + (b * 0.03)
-    año = año + 1
-
-print(f"El año en el que la población del país B será mayor que la del país A es: {año}")
+if __name__ == "__main__":
+    while b <= a:
+        a = a + (a * 0.02)
+        b = b + (b * 0.03)
+        año = año + 1
+    print(f"El año en el que la población del país B será mayor que la del país A es: {año}")
 
 # ! /\|=\/
