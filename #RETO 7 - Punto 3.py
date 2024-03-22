@@ -17,7 +17,7 @@ def continuar():
     opcion : int = int(input("¿Desea continuar? Marque 1 (sí) o 2 (no): "))
     return opcion
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     print("Ingrese un número natural para obtener los números pares descendentes hasta 2")
 
     while True:
